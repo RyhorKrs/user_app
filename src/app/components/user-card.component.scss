@@ -1,0 +1,65 @@
+@import './../shared/styles/style.scss';
+
+
+.user-card-wrapper {
+  padding: 0 20px;
+  padding-top: 50px;
+}
+
+.user-card-body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.1);
+
+  .user-picture {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .user-info {
+    &.male {
+      color:#111a69;
+    }
+
+    &.female {
+      color:#631010;
+    }
+
+    .info-header {
+      margin-bottom: 20px;
+      border-bottom: 2px solid;
+
+      h1 {
+        font-size: 18px;
+        font-weight: 800;
+        text-align: right;
+      }
+    }
+
+    > div:not(.info-header) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+
+      .info-item {
+        width: 150px;
+      }
+    }
+  }
+}

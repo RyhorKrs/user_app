@@ -1,0 +1,36 @@
+<div class="user-card-wrapper">
+  <div class="user-card-body">
+    <div class="user-picture">
+      <img src="{{currentUser.picture}}" alt="user-photo">
+    </div>
+    <div 
+    class="user-info male"
+    [class.female]="currentUserGender === 'female'"
+    >
+      <div class="info-header">
+        <h1>
+          {{currentUser.name.title}}. 
+          {{currentUser.name.first}} 
+          {{currentUser.name.last}}, 
+          {{currentUser.dob.age}} y.o.
+        </h1>
+      </div>
+      <div class="info-birth">
+        <h2 class="info-item">Date of birth:</h2>
+        <p>{{currentUser.dob.date | date}}</p>
+      </div>
+      <div class="info-location">
+        <h2 class="info-item">Location:</h2>
+        <p>{{currentUser.country}}, {{currentUser.city}}</p>
+      </div>
+      <div class="info-email">
+        <h2 class="info-item">Email:</h2>
+        <p>{{currentUser.email}}</p>
+      </div>
+      <div class="info-phone">
+        <h2 class="info-item">Phone:</h2>
+        <p>+{{currentUser.phone}}</p>
+      </div>
+    </div>
+  </div>
+</div>
