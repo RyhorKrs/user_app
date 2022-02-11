@@ -4,13 +4,12 @@
       <img src="{{currentUser.picture}}" alt="user-photo">
     </div>
     <div 
-    class="user-info" 
-    [class.male]="currentUser.gender === 'male'"
-    [class.female]="currentUser.gender === 'female'"
+    class="user-info male"
+    [class.female]="currentUserGender === 'female'"
     >
       <div class="info-header">
         <h1>
-          {{currentUser.name.title}} 
+          {{currentUser.name.title}}. 
           {{currentUser.name.first}} 
           {{currentUser.name.last}}, 
           {{currentUser.dob.age}} y.o.

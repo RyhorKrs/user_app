@@ -1,5 +1,11 @@
 @import './../shared/styles/style.scss';
 
+
+.user-card-wrapper {
+  padding: 0 20px;
+  padding-top: 50px;
+}
+
 .user-card-body {
   max-width: 600px;
   margin: 0 auto;
